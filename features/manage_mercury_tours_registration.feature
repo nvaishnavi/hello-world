@@ -1,6 +1,6 @@
 Feature: Manage account on Mecury Tours web site
 
-@register
+@javascript
 Scenario: Register a new account
   Given I am on the Mecury Tours web site
   When I request to register a new account
