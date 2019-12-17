@@ -5,7 +5,7 @@ Scenario: Register a new account
   Given I am on the Mecury Tours web site
   When I request to register a new account
   Then I am asked for and enter Contact Information:
-    |firstName   | lastName | phone       | email                         |
+    |firstName   | lastName | phone       | email   |
     |Guinea      | Piglette   | 888-555-1234| guinea.piglette3@somedomain.com |
   And I am asked for and enter Mailing Information:
     | address1        | address2                 | city       | state              | postalCode | country       |
