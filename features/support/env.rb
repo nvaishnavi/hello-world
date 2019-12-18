@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'capybara'
 require 'capybara/cucumber'
-require 'cucumber/rails/world'
 require 'cucumber/formatter/unicode'
 require 'test/unit/assertions'
 require 'site_prism'
