@@ -19,5 +19,4 @@ jobs:
     - name: Build and test with Cucumber
       run: |
         gem install bundler
-        bundle install
         bundle exec cucumber
