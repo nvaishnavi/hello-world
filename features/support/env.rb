@@ -1,28 +1,17 @@
 require 'rubygems'
 require 'capybara'
-require 'capybara/dsl'
 require 'capybara/cucumber'
-require 'rspec/expectations'
-require 'selenium-webdriver'
+require 'cucumber/rails/world'
+require 'cucumber/formatter/unicode'
+require 'test/unit/assertions'
 require 'site_prism'
 
-Capybara.run_server = false
-#Capybara.default_driver = :selenium
-Capybara.default_driver = :firefox
-Capybara.register_driver :firefox do |app|
-  options = {
-  :js_errors => true,
-  :timeout => 360,
-  :debug => false,
-  :inspector => false,
-  }
-  Capybara::Selenium::Driver.new(app, :browser => :firefox)
- end
-
+Capybara.server = :webrick
 Capybara.default_selector = :css
+Capybara.javascript_driver= :webkit
 
-SitePrism.configure do |config|
-  config.use_implicit_waits = true
+Capybara::Webkit.configure do |config|
+  config.allow_unknown_urls
+  # config.ignore_ssl_errors
 end
 
-World(Capybara::DSL)
