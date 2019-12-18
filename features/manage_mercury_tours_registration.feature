@@ -9,7 +9,7 @@ Scenario: Register a new account
     |Guinea      | Piglette   | 888-555-1234| guinea.piglette3@somedomain.com |
   And I am asked for and enter Mailing Information:
     | address1        | address2                 | city       | state              | postalCode | country |
-    | The White House | 1600 Pennsylvania Ave NW | Washington | DC                 | 20500      | United States |
+    | The White House | 1600 Pennsylvania Ave NW | Washington | DC  | 20500      | United States |
   And I am asked for and enter User Information:
     | userName    | password    | confirmPassword |
     | piglette3   | Go#piggies1 | Go#piggies1|
