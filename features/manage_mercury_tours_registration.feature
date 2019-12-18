@@ -12,6 +12,6 @@ Scenario: Register a new account
     | The White House | 1600 Pennsylvania Ave NW | Washington | DC                 | 20500      | United States |
   And I am asked for and enter User Information:
     | userName    | password    | confirmPassword |
-    | piglette3   | Go#piggies1 | Go#piggies1     |
+    | piglette3   | Go#piggies1 | Go#piggies1|
   When I submit the new registration request
   Then the registered page is displayed with salutations to "Guinea Piglette" and with user name "piglette3"
