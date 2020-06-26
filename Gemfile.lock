@@ -24,7 +24,7 @@ GEM
       gherkin (~> 3.2.0)
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
-    ffi (1.9.24)
+    ffi (1.11.3)
     gherkin (3.2.0)
     mime-types (3.0)
       mime-types-data (~> 3.2015)
